@@ -25,3 +25,26 @@ mi.activeItem - Is true if item is the current active page.
 mi.hasChildren() - Is true if the current menu item has children.
 skipChildren - Populated at the start of the macro. Allows you to skip all children and generate only a single level menu.
 showWithSubNav - Determined by the status of mi.hasChildren() and skipChildren - used to determine if the submenus should be generated.
+
+
+    <#if menu_primary_links??>
+    	<@m.menu menu_primary_links "mainmenu" />
+    </#if>
+
+if menu_[name of your xml menu]
+
+    <#macro menu menu id maxDepth=9><#lt>
+    	[some code goes here]
+    </#macro><#lt>
+
+Macros can be defined by using the following syntax
+    <#macro [macroname] [parameter] [parameter]><#lt>
+
+Parameters are then used later on.
+
+In this example:
+* menu is "menu_primary_links"faq-top-of-form
+* id is "mainmenu"
+* maxDepth is auto assigned to 9, but can be overridden
+
+    <#list xmlNodeToParse as variablename><#lt>
