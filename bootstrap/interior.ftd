@@ -1,0 +1,30 @@
+<#include "/kzhead.ftl" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="${currentlang!'en'}">
+<head>
+<#include "includes/_html_head.ftl" />
+${head}
+</head>
+<body>
+<#include "includes/_floodlight.ftl" />
+<div id="wrapper" class="container">
+<div id="container" class="row clear-block">
+<#include "includes/_header.ftl" />
+<div id="top-nav" class="navbar">
+<div id="mainmenu-container" class="navbar-inner">
+<#if menu_primary_links??>
+<@m.menu menu_primary_links "mainmenu" />
+</#if>
+</div>
+</div>
+<div id="content-container" class="adjustable-font clear-block">
+${body}
+</div>
+<div id="sidebar-right" class="sidebar">
+</div><!-- sidebar-right -->
+<#include "/footers/_gskfooter_nologo.txt" />
+</div><!-- /#container -->
+</div><!-- /#footer -->
+
+</body>
+</html>
