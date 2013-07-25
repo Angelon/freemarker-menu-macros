@@ -44,7 +44,7 @@ Macros can be defined by using the following syntax
 Parameters are then used later on.
 
 In this example:
-* menu is "menu_primary_links"faq-top-of-form
+* menu is "menu_primary_links"
 * id is "mainmenu"
 * maxDepth is auto assigned to 9, but can be overridden
 
